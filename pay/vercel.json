@@ -1,0 +1,11 @@
+{
+  "headers": [
+    {
+      "source": "/payment-manifest.json",
+      "headers": [
+        { "key": "Content-Type", "value": "application/x-payment-manifest" },
+        { "key": "Access-Control-Allow-Origin", "value": "*" }
+      ]
+    }
+  ]
+}
