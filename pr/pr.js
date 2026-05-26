@@ -11,7 +11,7 @@ function buildPaymentRequest(amount = '0.01') {
 
   const returnValue = document.getElementById('returnValue').value;
   const supportedInstruments = [{
-    supportedMethods: 'https://ayer-ribeiro.github.io/app-switch/pay',
+    supportedMethods: 'https://pay-nine-tan.vercel.app',
     data: {
       testField: 'test value',
       returnValue,
