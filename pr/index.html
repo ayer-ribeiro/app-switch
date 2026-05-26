@@ -61,6 +61,7 @@
         return;
       }
       const apps = await navigator.getInstalledRelatedApps();
+      console.log('getInstalledRelatedApps:', JSON.stringify(apps, null, 2));
       const bb = apps.find(a => a.id === 'dev.bobbucks');
       el.textContent = bb
         ? `installed — version: ${bb.version ?? 'unknown'}`
