@@ -2,9 +2,8 @@
   "name": "Bob Bucks Test",
   "short_name": "BobBucks Test",
   "related_applications": [{
-    "platform": "android",
+    "platform": "play",
     "id": "dev.bobbucks",
-    "url": "https://play.google.com/store/apps/details?id=dev.bobbucks"
   }],
   "prefer_related_applications": false
 }
