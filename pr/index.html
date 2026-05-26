@@ -67,6 +67,16 @@
         ? `installed — version: ${bb.version ?? 'unknown'}`
         : 'not installed';
     })();
+
+    // Fetch payment handler manifest and show min_version
+    (async () => {
+      const res = await fetch('https://pay-nine-tan.vercel.app/manifest.json');
+      const manifest = await res.json();
+      const minVersion = manifest?.related_applications?.[0]?.min_version ?? 'unknown';
+      const el = document.createElement('p');
+      el.textContent = `Payment manifest min_version: ${minVersion}`;
+      document.getElementById('contents').appendChild(el);
+    })();
   </script>
 </body>
 </html>
