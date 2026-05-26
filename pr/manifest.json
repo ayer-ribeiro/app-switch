@@ -3,7 +3,7 @@
   "short_name": "BobBucks Test",
   "related_applications": [{
     "platform": "play",
-    "id": "dev.bobbucks",
+    "id": "dev.bobbucks"
   }],
   "prefer_related_applications": false
 }
