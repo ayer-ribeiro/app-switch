@@ -1,11 +1,9 @@
-name: Deploy pay/ to Vercel
+name: Deploy to Vercel
 
 on:
   push:
     branches:
       - main
-    paths:
-      - 'pay/**'
 
 jobs:
   deploy:
@@ -15,7 +13,6 @@ jobs:
 
       - name: Deploy to Vercel
         run: npx vercel deploy --prod --yes --token=${{ secrets.VERCEL_TOKEN }} --scope ayer-ribeiros-projects
-        working-directory: pay
         env:
           VERCEL_ORG_ID: team_jilvMmsDkvnA930bGphPnMvF
           VERCEL_PROJECT_ID: prj_8BaTHuHgBIAs3HpkK8S8lX1Zzh9L

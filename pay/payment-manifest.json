@@ -1,4 +1,4 @@
 {
-  "default_applications": ["https://pay-nine-tan.vercel.app/manifest.json"],
-  "supported_origins": ["https://ayer-ribeiro.github.io"]
+  "default_applications": ["https://pay-nine-tan.vercel.app/pay/manifest.json"],
+  "supported_origins": ["https://pay-nine-tan.vercel.app"]
 }
